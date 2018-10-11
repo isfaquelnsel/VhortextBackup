@@ -1,0 +1,6 @@
+framework module Pods_Vhortext {
+  umbrella header "Pods-Vhortext-umbrella.h"
+
+  export *
+  module * { export * }
+}

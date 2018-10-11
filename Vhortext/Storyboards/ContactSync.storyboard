@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact SyncVC-->
+        <scene sceneID="icC-VN-BRe">
+            <objects>
+                <viewController storyboardIdentifier="ContactSyncVC" id="hOM-WJ-OiE" customClass="ContactSyncVC" customModule="Vhortext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0pq-vz-qkU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_registration_bg_new-1" translatesAutoresizingMaskIntoConstraints="NO" id="qXF-Pw-2dy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-l1-sZA">
+                                <rect key="frame" x="96" y="196" width="183" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logowithtext" translatesAutoresizingMaskIntoConstraints="NO" id="J4M-hi-a5M">
+                                <rect key="frame" x="123.5" y="279" width="128" height="109"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait your contacts are being synced" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="H7C-Xh-jcF">
+                                <rect key="frame" x="40" y="418" width="295" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMz-sP-JRu">
+                                <rect key="frame" x="40" y="489" width="295" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueAction:" destination="hOM-WJ-OiE" eventType="touchUpInside" id="9Kb-tS-D2l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qXF-Pw-2dy" firstAttribute="trailing" secondItem="My1-nL-olC" secondAttribute="trailing" id="44C-vd-ltt"/>
+                            <constraint firstItem="H7C-Xh-jcF" firstAttribute="top" secondItem="J4M-hi-a5M" secondAttribute="bottom" constant="30" id="4Tf-7q-ZvP"/>
+                            <constraint firstItem="J4M-hi-a5M" firstAttribute="centerX" secondItem="0pq-vz-qkU" secondAttribute="centerX" id="AgR-32-SeS"/>
+                            <constraint firstItem="MuY-l1-sZA" firstAttribute="centerX" secondItem="0pq-vz-qkU" secondAttribute="centerX" id="BX6-bv-Zci"/>
+                            <constraint firstItem="My1-nL-olC" firstAttribute="trailing" secondItem="sMz-sP-JRu" secondAttribute="trailing" constant="40" id="LL0-14-65x"/>
+                            <constraint firstItem="H7C-Xh-jcF" firstAttribute="leading" secondItem="My1-nL-olC" secondAttribute="leading" constant="40" id="Ql9-Mw-uno"/>
+                            <constraint firstItem="qXF-Pw-2dy" firstAttribute="top" secondItem="0pq-vz-qkU" secondAttribute="top" id="SWy-u6-tt3"/>
+                            <constraint firstItem="sMz-sP-JRu" firstAttribute="height" secondItem="0pq-vz-qkU" secondAttribute="height" multiplier="1:17" id="VLg-2w-CZ1"/>
+                            <constraint firstItem="sMz-sP-JRu" firstAttribute="centerX" secondItem="0pq-vz-qkU" secondAttribute="centerX" id="YkK-6i-UAV"/>
+                            <constraint firstItem="H7C-Xh-jcF" firstAttribute="centerX" secondItem="0pq-vz-qkU" secondAttribute="centerX" id="dA6-u0-Y19"/>
+                            <constraint firstItem="qXF-Pw-2dy" firstAttribute="leading" secondItem="My1-nL-olC" secondAttribute="leading" id="ffz-gu-Enw"/>
+                            <constraint firstItem="J4M-hi-a5M" firstAttribute="centerY" secondItem="0pq-vz-qkU" secondAttribute="centerY" id="gaw-Jl-GmF"/>
+                            <constraint firstItem="My1-nL-olC" firstAttribute="trailing" secondItem="H7C-Xh-jcF" secondAttribute="trailing" constant="40" id="mlQ-Hx-jau"/>
+                            <constraint firstItem="sMz-sP-JRu" firstAttribute="top" secondItem="H7C-Xh-jcF" secondAttribute="bottom" constant="30" id="oFI-VT-X6e"/>
+                            <constraint firstItem="qXF-Pw-2dy" firstAttribute="bottom" secondItem="My1-nL-olC" secondAttribute="bottom" id="tly-qP-ue4"/>
+                            <constraint firstItem="sMz-sP-JRu" firstAttribute="leading" secondItem="My1-nL-olC" secondAttribute="leading" constant="40" id="ujN-SX-9Px"/>
+                            <constraint firstItem="J4M-hi-a5M" firstAttribute="top" secondItem="MuY-l1-sZA" secondAttribute="bottom" constant="50" id="vuv-rJ-vq9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="My1-nL-olC"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnContinue" destination="sMz-sP-JRu" id="tGw-CH-qeX"/>
+                        <outlet property="lblSync" destination="H7C-Xh-jcF" id="jXg-eG-B5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1S7-06-5om" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-110.19490254872565"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_registration_bg_new-1" width="540" height="960"/>
+        <image name="logowithtext" width="128" height="109"/>
+    </resources>
+</document>

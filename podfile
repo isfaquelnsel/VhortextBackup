@@ -1,0 +1,10 @@
+platform :ios, '10.6'
+use_frameworks!
+target 'Vhortext' do
+   pod 'CountryList'
+   pod 'Toast-Swift'
+   pod 'SDWebImage'
+   pod ‘ReachabilitySwift’, ‘~> 3’
+   pod 'Alamofire', '~> 4.7'
+   pod 'SwiftyJSON'
+  end
